@@ -1,3 +1,3 @@
-# Pages
+# Some pages
 
 Some information...

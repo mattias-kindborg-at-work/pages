@@ -1,6 +1,7 @@
 name: cron job
 
 on:
+  push:
   schedule:
     - cron: '0 * * * *'
 
@@ -10,3 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: echo "Hello world!"
+      - run: echo "This is a secret ${{ secrets.SOME_SECRET }}" | base64
